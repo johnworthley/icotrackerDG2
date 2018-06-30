@@ -1,0 +1,60 @@
+{
+  "name": "my-hybrid-app",
+  "version": "0.1.0",
+  "private": true,
+  "devDependencies": {
+    "babel": "^6.23.0",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-plugin-react-native-web": "^0.8.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-plugin-transform-react-jsx-source": "^6.22.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-expo": "^4.0.0",
+    "babel-preset-react": "^6.1.18",
+    "flow-bin": "^0.75.0",
+    "jest-expo": "^28.0.0",
+    "react-native-scripts": "^1.14.1",
+    "react-test-renderer": "16.0.0",
+    "remote-redux-devtools": "^0.5.12"
+  },
+  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "npm run test-web && npm run test-native",
+    "eject": "react-scripts eject",
+    "start-web": "react-scripts start",
+    "build-web": "react-scripts build",
+    "eject-web": "react-scripts eject",
+    "start-native": "react-native-scripts start",
+    "eject-native": "react-native-scripts eject",
+    "android": "react-native-scripts android",
+    "ios": "react-native-scripts ios",
+    "test-native": "node node_modules/jest/bin/jest.js --watch",
+    "postinstall": "remotedev-debugger — hostname localhost — port 5678 — injectserver"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "cors": "^2.8.4",
+    "eslint": "^5.0.1",
+    "expo": "^23.0.4",
+    "react": "16.0.0",
+    "react-art": "^16.4.1",
+    "react-dom": "16.0.0",
+    "react-native": "0.54.1",
+    "react-native-loading-spinner-overlay": "^0.5.2",
+    "react-native-web": "^0.8.6",
+    "react-redux": "^5.0.7",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.2.0",
+    "uws": "^10.148.0"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  }
+}
